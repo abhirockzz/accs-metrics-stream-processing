@@ -1,0 +1,16 @@
+{
+  "memory": "2G",
+  "instances": 1,
+  "services": [
+    {
+      "name": "cpu-metrics",
+      "type": "OEHCS"
+    }
+  ],
+  "environment": {
+    "REDIS_HOST": "<host>",
+    "REDIS_PORT": "<port>",
+    "REDIS_METRICS_SORTED_SET": "cpu-leaderboard",
+	"REDIS_TENANT_IDENTIFIER": "kehishba"
+  }
+}
